@@ -32,4 +32,4 @@ function all (a, b) {
   })
 }
 all(a, b)
-  .then(console.log)
+  .then(console.log.bind(console))
