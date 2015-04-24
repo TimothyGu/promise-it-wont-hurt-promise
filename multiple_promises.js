@@ -20,7 +20,7 @@ function all (a, b) {
         fulfill(data)
       }
     })
-    a.fail(reject)
+      .catch(reject)
     b.then(function (val) {
       counter ++
       data.push(val)
@@ -28,7 +28,7 @@ function all (a, b) {
         fulfill(data)
       }
     })
-    b.fail(reject)
+      .catch(reject)
   })
 }
 all(a, b)
